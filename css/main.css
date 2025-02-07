@@ -311,4 +311,36 @@ body {
 .footer {
   background-color: #101d2c;
   grid-column: full-start/full-end;
+  padding: 8rem;
+}
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+}
+.nav__link:link, .nav__link:visited {
+  display: block;
+  padding: 1.5rem;
+  font-size: 1.4rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.2s;
+}
+.nav__link:hover, .nav__link:active {
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-3px);
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #aaa;
+  margin-top: 6rem;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
